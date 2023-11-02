@@ -1,0 +1,125 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #C7395F; /* Pink background */
+}
+
+/* Header styles */
+h1 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 48px;
+  color: #E8BA40; /* Gold text */
+  margin: 20px 0;
+  text-transform: uppercase;
+  background-color: #DED4E8; /* Lavender background */
+  color: #C7395F; /* Pink text */
+  padding: 20px;
+  border-radius: 50px; /* Round header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Main container styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: #E8BA40; /* Gold text */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #C7395F; /* Pink text */
+  text-decoration: underline;
+}
+
+/* Section styles */
+section {
+  background-color: #DED4E8; /* Lavender background */
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px dotted #E8BA40; /* Gold dotted border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px dashed #C7395F; /* Pink dashed border */
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: rotate(15deg); /* Rotate on hover */
+}
+
+/* Lists styles */
+ul, ol {
+  list-style: none;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+/* Result paragraph styles */
+p#result {
+  font-size: 24px; /* Larger text size */
+  margin: 20px;
+  color: #E8BA40; /* Gold text */
+}
+
+/* Footer styles */
+footer {
+  background-color: #DED4E8; /* Lavender background */
+  color: #C7395F; /* Pink text */
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 20px 20px; /* Round footer */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px; /* Adjusted header font size */
+  }
+  section {
+    margin: 10px 0;
+  }
+  img:hover {
+    transform: rotate(0deg); /* Reset rotation on small screens */
+  }
+}
+ 
